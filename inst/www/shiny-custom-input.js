@@ -20,11 +20,15 @@ $.extend(customShinyInputBinding, {
 
   // Given the DOM element for the input, return the value as JSON.
   getValue: function(el) {
+    console.log('el');
+    console.log(el)
     var value = $(el).val();
     var value_type = $(el).attr('data-value-type');
     switch (value_type) {
       case 'JSON':
-        console.log('JSON.stringify(value)'); console.log(JSON.stringify(value)); return JSON.stringify(value);
+        console.log('JSON.stringify(value)');
+        console.log(JSON.stringify(value));
+        return JSON.stringify(value);
       case 'text':
         console.log('value'); console.log(value); return value;
       default:
