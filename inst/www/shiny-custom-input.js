@@ -24,9 +24,9 @@ $.extend(customShinyInputBinding, {
     var value_type = $(el).attr('data-value-type');
     switch (value_type) {
       case 'JSON':
-        return JSON.stringify(value);
+        console.log(JSON.stringify(value)); return JSON.stringify(value);
       case 'text':
-        return value;
+        console.log(value); return value;
       default:
         throw new Error("Unrecognized value type of custom shiny input: " + value_type);
     }
@@ -51,6 +51,7 @@ $.extend(customShinyInputBinding, {
 
   // This returns a full description of the input's state.
   getState: function(el) {
+    console.log(el.value);
     return {
       value: el.value
     };
