@@ -6,7 +6,7 @@ SUPPORTED_THEMES <- c("cerulean", "darkly", "paper", "simplex",
                       "cyborg", "sandstone", "yeti", "lumen", "spacelab")
 
 #' Cloudfront path
-CDN_PATH <- "https://d335w9rbwpvuxm.cloudfront.net"
+CDN_PATH <- "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3"
 
 #' Add dashboard dependencies to html
 #'
